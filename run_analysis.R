@@ -17,23 +17,18 @@ DataDownload <- function(url.data) {
   }
 }
 
-# 0. load the train and test files 
 LoadData <- function() {
-  # 0.1 change the working directory to read the data
   path <<- sprintf(getwd(),"%s/data/UCI HAR Dataset/", sep = "")
   
   # Read the Activity files
-  
   ActivityTest  <- read.table(file.path(path, "test" , "Y_test.txt" ),header = FALSE)
   ActivityTrain <- read.table(file.path(path, "train", "Y_train.txt"),header = FALSE)
   
   # Read the Subject files
-  
   SubjectTest  <- read.table(file.path(path, "test" , "subject_test.txt"),header = FALSE)
   SubjectTrain <- read.table(file.path(path, "train", "subject_train.txt"),header = FALSE)
   
   # Read Fearures files
-  
   FeaturesTest <- read.table(file.path(path, "test" , "X_test.txt" ),header = FALSE)
   FeaturesTrain <- read.table(file.path(path, "train", "X_train.txt"),header = FALSE)  
   
@@ -45,7 +40,6 @@ LoadData <- function() {
   
 }
 
-# 0. load the train and test files 
 MergeData <- function() {
   
   dataset <- LoadData()
