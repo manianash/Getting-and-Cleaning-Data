@@ -5,7 +5,7 @@ date: "Sunday, February 22, 2015"
 output: html_document
 ---
 
-Getting and Cleaning Data course from coursera Data Science Specialization. Course Project COdebook.
+Getting and Cleaning Data course from coursera Data Science Specialization. Course Project Codebook.
 
 ==============================================================
 
