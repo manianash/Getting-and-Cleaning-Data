@@ -17,8 +17,6 @@ DataDownload <- function(url.data) {
   }
 }
 
-setWorkingDirectory <- function(directory) setwd(directory)
-
 # 0. load the train and test files 
 LoadData <- function() {
   # 0.1 change the working directory to read the data
@@ -119,6 +117,6 @@ TidyData <- function(){
 
 
 
-DataDownload("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
+# DataDownload("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
 
-Data <- TidyData()
+# Data <- TidyData()
